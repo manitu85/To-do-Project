@@ -137,7 +137,7 @@ function addTaskItem() {
           if (!newText || newText == "" || newText == " ") {
             return false;
           }
-          target.childNodes[2].textContent = newText;
+          target.childNodes[0].textContent = newText;
         }
       });
   }
