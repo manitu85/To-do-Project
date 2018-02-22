@@ -215,7 +215,7 @@ ul li .delete {
     height: 30px;
     line-height: 30px;
     opacity: 0;
-    transition: .4s linear;
+    transition: .25s linear;
     display: flex;
 }
 
@@ -233,7 +233,7 @@ ul li .edit {
     height: 30px;
     line-height: 30px;
     opacity: 0;
-    transition: .25s linear;
+    transition: .4s linear;
     display: flex;
 }
 
