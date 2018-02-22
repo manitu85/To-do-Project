@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'Digital dream';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font-face/DIGITALDREAM.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Admiration Pains';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font-face/Admiration Pains.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Easy November';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font-face/Easy November.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'BebasNeue Book';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font-face/BebasNeue Book.woff') format('woff');
+}
+
+/****** default *******/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    color: #505050;
+    /* background-color: #101010; */
+}
+
+
+/******* jumbotron-content ******/
+
+.jumbotron {
+    background-color: white;
+    font-size: 36px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+#date-display {
+    font-size: 16px;
+}
+
+
+/******* generic class for form, input and buttons ******/
+
+.form-wrapper {
+    width: 100%;
+    padding: 10px 0;
+}
+
+#date-display {
+    color: #698f3f;
+    font-family: 'BebasNeue Book';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Admiration Pains';
+    /* font-family: 'Children of the Starlight'; */
+    font-size: 52px;
+    margin-bottom: 40px;
+    color: #0e4749;
+    /* color: #0f3331; */
+    /* color: #1c7c54; */
+    text-transform: none;
+}
+
+h1.heading {
+    text-transform: capitalize;
+    font-size: 42px;
+    padding-bottom: 10px;
+    margin: 20px 0;
+    border-bottom: #202020 solid 3px;
+    font-family: 'Easy November';
+    color: #0e4749;
+}
+
+h1.heading strong {
+    font-size: 62px;
+    font-weight: 500;
+    /* height: 20px;
+     line-height: 20px;
+     width: 20px; */
+}
+
+h4 {
+    font-family: 'Digital dream';
+    color: #808080;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.my-input {
+    width: 80%;
+    border: 2px solid #21b4ce;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    color: #00a8e8;
+    outline: none;
+    line-height: 1.42857143;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    float: left;
+}
+
+.my-input:hover,
+.my-input:focus {
+    /* border: 3px solid rgb(61, 218, 218); */
+    background-color: #101010;
+    color: #68e2f8;
+    border-color: #00a8e8;
+    outline: none;
+}
+
+.my-button {
+    width: 19%;
+    border: 2px solid #21b4ce;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    color: #00a8e8;
+    background-color: #fff;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    float: right;
+}
+
+.my-button:focus,
+.my-button:hover {
+    /* border: 3px solid rgb(61, 218, 218); */
+    background-color: #101010;
+    color: #68e2f8;
+    border-color: #00a8e8;
+    outline: none;
+}
+
+
+/******** list style *********/
+
+#tasks-wrapper {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+}
+
+li {
+    font-size: 12;
+    color: #666;
+    background: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    opacity: .8;
+    text-align: left;
+    /* font-family: 'BioRhyme-Light'; */
+    /* font-family: 'BebasNeue Book'; */
+    /* list-style-type: circle;
+    list-style: inside */
+}
+
+/*****************************************/
+
+/* animation delete and edit icon */
+
+span {
+    padding: 0 5px;
+    /* margin: 0; */
+    vertical-align: center;
+    float: right;
+}
+
+ul li .delete {
+    color: #666;
+    float: right;
+    font-weight: 800;
+    vertical-align: center;
+    width: 0;
+    height: 30px;
+    line-height: 30px;
+    opacity: 0;
+    transition: .4s linear;
+    display: flex;
+}
+
+li:hover .delete {
+    width: 25px;
+    opacity: 1;
+}
+
+ul li .edit {
+    float: right;
+    color: #666;
+    font-weight: 800;
+    vertical-align: center;
+    width: 0;
+    height: 30px;
+    line-height: 30px;
+    opacity: 0;
+    transition: .25s linear;
+    display: flex;
+}
+
+li:hover .edit {
+    width: 25px;
+    opacity: 1;
+}
+
+
+/* ****************************************** */
+
+
+/* hover over icon */
+
+.delete i {
+    /* padding: 0; */
+    height: 30px;
+    /* width: 30px; */
+    line-height: 30px;
+}
+
+.edit i {
+    height: 30px;
+    line-height: 30px;
+    /* padding: 0 10px; */
+}
+
+.delete:hover i {
+    color: rgb(255, 80, 74);
+}
+
+.edit:hover i {
+    color: rgb(79, 66, 255);
+}
+
+
+/* ****************************************** */
+
+/* input type[checked] */
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    margin-right: 10px;
+    float: left;
+    /* border: 4 px solid transparent; */
+    width: 20px;
+    height: 20px;
+    /* background: rgb(72, 255, 0); */
+    /* border-radius: 50px; */
+    /* font-weight: 400; */
+}
+
+
+/* input[type="checkbox"]:checked {
+    color: #; 
+    background-color: rgb(63, 21, 160);
+} */
+
+
+
+/* class for hover */
+
+.selected {
+    /* color: #e47cf1; */
+    color: #9342b9;
+}
+
+
+/* cross-over effect */
+
+.cross {
+    text-decoration: line-through;
+    opacity: .8;
+    color: #5db65d;
+}
+
+.clock {
+    font-size: 20px;
+    color: #1ee8ff;
+    /* color: #00ff59; */
+    background-color: #202020;
+    /* background-color: #0e4749; */
+    text-align: center;
+    /* width: 39%;
+     margin: 0 auto; */
+}
+
+#search {
+    background-color: #000;
+    color: #5db65d;
+    font-size: 13.5px;
+}
