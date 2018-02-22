@@ -93,13 +93,13 @@ function addTaskItem() {
   function effectHover() {
       var ul = document.getElementById("incomplete");  
       ul.addEventListener("mouseover", function (el) {
-        checkHover = el.target.tagName.toLowerCase() == "li"; 
+        var checkHover = el.target.tagName.toLowerCase() == "li"; 
         if (checkHover) {
           el.target.classList.add("selected");
           }
       });
       ul.addEventListener("mouseout", function (el) {
-        checkHover = el.target.tagName.toLowerCase() == "li";
+        var checkHover = el.target.tagName.toLowerCase() == "li";
         if (checkHover) {
           el.target.classList.remove("selected");
         }
