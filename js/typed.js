@@ -1,5 +1,5 @@
 $(function() {
-  var quote = new Typed("#search", {
+  new Typed("#search", {
     strings: [
       "'' It always seems impossible until it's done. '' ^1500\n Nelson Mandela"
     ],
@@ -10,4 +10,4 @@ $(function() {
   });
 });
 
-$(function() {});
+
