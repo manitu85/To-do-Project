@@ -4,7 +4,7 @@
 <head>
       <meta charset="UTF-8">
       <!-- === basic SEO === -->
-      <meta name="description" content="Digital Genetics - web agency, to-do-list, html5, css3, jQuery and Bootstrap framework">
+      <meta name="description" content="Digital Genetics - web agency, to-do-list, html5, css3, Javascript and Bootstrap framework">
       <meta name="keywords" content="To-do app, daily-list, HTML5, CSS3, JavaScript and Bootstrap">
       <!-- ================= -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,81 +22,47 @@
       <link rel="stylesheet" href="css/main.css">
 
 </head>
+
 <body>
       <header>
             <div class="jumbotron text-center">
-                        <h2>Daily List</h2>
-                        <h4 id="logo">DIGITAL Genetics<sup> &trade;</sup></h4>
-                        <h3 id="date-display">
-                              date
-                        </h3>
-                        <div class="clock"></div>  
+                  <h2>Daily List</h2>
+                  <h4 id="logo">DIGITAL Genetics
+                        <sup> &trade;</sup>
+                  </h4>
+                  <h3 id="date-display">date</h3>
+                  <div id="clock"></div>
             </div>
-            <!-- jumbotron end -->
       </header>
+
       <section id="app">
             <div class="container">
                   <div class="row">
                         <div class="text-center col-md-6 col-md-offset-3">
                               <div class="form-wrapper">
                                     <input id="input" type="text" value="" placeholder="Hey dummy, write something..." class="my-input">
-                                    <button id="add-btn" class="btn btn-outline-success my-button">Add
-                                          <strong>+</strong>
-                                    </button>
+                                    <button id="add-btn" class="btn btn-outline-success my-button">Add<strong> +</strong></button>
                               </div>
                         </div>
                         <!-- input and add button end -->
                   </div>
 
                   <div id="tasks-wrapper">
-                        <!-- to-do tasks begin -->
+                        <!-- to-do incomplete list items begin -->
                         <div class="row">
                               <div class="text-center col-md-6 col-md-offset-3">
-                                    <h1 class="heading">Incomplete items
-                                          <strong id="plus">+</strong>
-                                    </h1>
+                                    <h1 class="heading" id="headOne">Incomplete items<strong id="plus" > +</strong></h1>
                                     <ul id="incomplete">
-                                          <li>
-                                                <input type="checkbox" class="undone"> 
-                                                Kupiti namirnice za rucak
-                                                <span class="delete">
-                                                      <i class="fa fa-trash"></i>
-                                                </span>
-                                                <span class="edit">
-                                                      <i class="fa fa-pencil"></i>
-                                                </span>
-                                          </li>
-                                          <li>
-                                                <input type="checkbox" class="undone"> 
-                                                Vreme nikog ne čeka
-                                                <span class="delete">
-                                                      <i class="fa fa-trash"></i>
-                                                </span>
-                                                <span class="edit">
-                                                      <i class="fa fa-pencil"></i>
-                                                </span>
-                                          </li>
-                                          <li>
-                                                <input type="checkbox"  class="undone"> 
-                                                Završiti projekat 
-                                                <span class="delete">
-                                                      <i class="fa fa-trash"></i>
-                                                </span>
-                                                <span class="edit">
-                                                      <i class="fa fa-pencil"></i>
-                                                </span>
-                                          </li>
+                                          <!-- javascript -->
                                     </ul>
                               </div>
                         </div>
-
+                        <!-- to-do completed list items begin  -->
                         <div class="row">
                               <div class="text-center col-md-6 col-md-offset-3">
-                                    <h1 class="heading">Completed items
-                                          <strong id="plus-plus">+</strong>
-                                    </h1>
-                                    <ul id="completed">
-                                          
+                                    <h1 class="heading" id="headTwo">Completed items<strong id="plus-plus"> +</strong></h1>
+                                    <ul id="complete">
+                                          <!-- javascript -->
                                     </ul>
                               </div>
                         </div>
@@ -106,7 +72,7 @@
                         <div class="row">
                               <div class="text-center col-md-6 col-md-offset-3">
                                     <div class="form-wrapper">
-                                          <input id="search" class="my-input" type="text" value="" placeholder="Search item...">
+                                          <input id="search" class="my-input" type="text" value="">
                                           <button id="clear-btn" class="btn btn-outline-success my-button">Clear</button>
                                     </div>
                               </div>
@@ -114,10 +80,9 @@
                   </div>
                   <!-- task-wrapper end -->
             </div>
-            <!-- container end    -->
+            <!-- container end -->
       </section>
 
-      
       <script src="js/jQuery/jquery-3.3.1.min.js"></script>
       <!-- ***** bootstrap js ***** -->
       <script src="js/bootstrap/bootstrap.min.js"></script>
